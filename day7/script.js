@@ -3,6 +3,8 @@
 // }
 // greet();
 
+// const { useInsertionEffect } = require("react");
+
 // function showMessage() {
 //     console.log("Learning functions");
 // }
@@ -142,3 +144,115 @@
 //     }
 //     console.log(count);
 // }
+// function repeatTask(func,n) {
+//     for (let i=0; i<n;i++){
+//         func();
+//     }
+// }
+
+// const alertUser = () => console.log("Alert!");
+
+// repeatTask(alertUser, 3);
+
+// const promptUser = () => console.log("I am a prompt");
+
+// repeatTask(promptUser, 3);
+
+
+// function applyDiscount(price, discountFunc){
+//     return discountFunc(price);
+// }
+
+// const tenPercent = (price) => price*0.9;
+// const twentyPercent = (price) => price*0.8;
+
+// console.log(applyDiscount(100,tenPercent));
+// console.log(applyDiscount(100, twentyPercent));
+
+// function calculate(a,b,operation){
+//     return operation(a,b);
+// }
+
+
+// const add = (x,y)=> x+y;
+// const mul = (x,y)=> x*y;
+
+// console.log(calculate(2,4,add));
+
+// function processArray(arr, processor){
+//     for (let i=0; i<arr.length;i++){
+//         processor(arr[i]);
+//     }
+// }
+
+// const pricedbl = (num) =>{
+//     console.log(num*2);
+// };
+
+// processArray([1,2,3],pricedbl);
+
+
+// const account={
+//     balance: 1000,
+//     deposit(amount){
+//         this.balance = this.balance + amount;
+//         console.log("New balance:"+this.balance);
+//     },
+
+//     withdraw(amount){
+//         this.balance= this.balance-amount;
+//         console.log("New balance:"+this.balance);
+        
+//     }
+// }
+
+// account.deposit(500);
+// account.withdraw(200);
+
+// const formatter  ={
+//     toUpper(str){
+//         return str.toUpperCase();
+//     },
+//     toLower(str){
+//         return str.toLowerCase();
+//     },
+//     trim(str){
+//         return str.trim();
+//     }
+// };
+
+// console.log(formatter.trim("           hello"));
+
+// const counter = {
+//     count:0,
+//     increment() {
+//         this.count++;
+//         console.log("Count:"+this.count);
+//     },
+//     reset(){
+//         this.count=0;
+//         console.log("Counter reset");
+        
+//     }
+// };
+
+// counter.increment();
+// counter.increment(); // Output: Count: 1
+// counter.increment(); // Output: Count: 2
+// counter.reset(); // Output: Counter reset
+
+
+    // for (let i = 0; i <= 5; i++) {
+    //     let str = "";  
+    //     for (let j = 0; j < i; j++) {
+    //         str += "*";
+    //     }
+    //     console.log( str);
+    // } 
+for (let i = 5; i >=1; i--) {
+ let str = "";
+    for (let j = 0; j<=i; j++) {
+        str += "*";
+    }
+    console.log(str);
+}
