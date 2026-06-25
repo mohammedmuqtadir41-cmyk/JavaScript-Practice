@@ -1,0 +1,32 @@
+// const h1 = document.querySelector("#heading1");
+// const p1 = document.querySelector("#p1");
+// const all = document.querySelectorAll(".text");
+// const h2 = document.querySelector("#heading2");
+// const task = document.querySelector("#task");
+
+// console.log(h1);
+// console.log(p1);
+// all.forEach((item) => {
+//     console.log(item.textContent)
+// });
+
+// h2.textContent = "Learning Dom";
+// h2.innerHTML = "<b>Learning Dom</b>";
+
+// task.addEventListener("input", () => {
+//     console.log(task.value);
+// })
+// const btn = document.querySelector("#btn");
+
+// btn.addEventListener("click", () => {
+//   const input = document.querySelector("#name");
+//   let heading = document.querySelector("#heading");
+//   heading.style.color = "blue";
+//   heading.style.backgroundColor = "yellow";
+//   heading.textContent = input.value;
+//   console.log(input.value);
+
+//   input.value = "";
+
+//   input.focus();
+// });
