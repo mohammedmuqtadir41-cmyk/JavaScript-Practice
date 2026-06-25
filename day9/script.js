@@ -50,3 +50,52 @@
 // let nf = numbers.filter((number)=> number % 2 ==0);
 // console.log(nf);
 
+// let numbers = [1,2,3,4,5,6,7,8,9]
+
+// numbers.forEach((num) => {
+//     console.log(num);
+// });
+
+// let numbers = [1,2,3,4,5,6,7,8,9]
+
+// numbers.forEach((num) => {
+//     console.log(`$${num}`);
+// });// let numbers = [1,2,3,4,5,6,7,8,9]
+
+// numbers.forEach((num) => {
+//     console.log(`${index + 1}.${num}`);
+// });
+
+// let numbers = [1,2,3,4,5,6,7,8,9]
+
+// numbers.forEach((num,index) => {
+//     console.log(`${"the index is: "}${index+1},${"the element is :"}${num}`);
+// });
+
+// let names = ["ahmed","junaid","rehman","noman"];
+// let capitalNames = [];
+// names.forEach((name) => {
+//     capitalNames.push(name.toUpperCase());
+// });
+// console.log(capitalNames);
+
+// let students = [
+//     {name: "Ahmed", marks: 69},
+//     {name: "Junaid", marks: 78},
+//     {name: "Nomaan", marks: 56},
+// ];
+
+// let studentNames = students.map((student) =>student.name);
+
+// console.log(studentNames);
+
+// let numbers = [1,2,3,4,5,6,7,8,9];
+
+// let events = numbers.filter((num) => num %2 ==0);
+// console.log(events);
+
+// let ages = [29,26,39,59,64];
+// let hasTeenager = ages.every((age) => age<18 );
+// console.log(hasTeenager);
+
+//  NEED TO LEARN FROM DEFAULT PARAMETER AND SPREAD JS DAY 9 PAGE-10
