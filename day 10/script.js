@@ -30,3 +30,38 @@
 
 //   input.focus();
 // });
+
+// const input = document.querySelector("#name");
+// const heading = document.querySelector("#heading");
+// const btn = document.querySelector("#btn");
+
+// btn.addEventListener("click", () => {
+//   input.addEventListener("click",() => {
+//     console.log(input.value);
+//   });
+//   heading.textContent = input.value;
+//   heading.style.color = "blue";
+
+//   heading.style.backgroundColor = "yellow";
+
+// });
+//   input.value = "";
+//   input.focus();
+
+// const input = document.querySelector("#name");
+// const heading = document.querySelector("#heading");
+// const btn = document.querySelector("#btn");
+// heading.textContent = "DOM MASTER";
+// heading.style.color = "red";
+// btn.addEventListener("click", () => {
+//   console.log(input.value);
+//   heading.textContent = input.value;
+//   input.value = "";
+// input.focus();
+// });
+
+const btn = document.querySelector("#btn");
+const heading = document.querySelector("#heading");
+btn.addEventListener("click", () => {
+  heading.style.color = "blue";
+});
