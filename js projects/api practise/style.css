@@ -1,129 +1,124 @@
-// random dog img generator
+/* random dog img generator */
 
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
 
-*{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-body{
-    font-family:'Poppins',sans-serif;
-    min-height:100vh;
+body {
+  font-family: "Poppins", sans-serif;
+  min-height: 100vh;
 
-    display:flex;
-    justify-content:center;
-    align-items:center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
-    background:linear-gradient(135deg,#6a11cb,#2575fc);
+  background: linear-gradient(135deg, #6a11cb, #2575fc);
 
-    padding:20px;
+  padding: 20px;
 }
 
-.container{
-    width:420px;
-    background:white;
-    border-radius:20px;
-    padding:30px;
+.container {
+  width: 420px;
+  background: white;
+  border-radius: 20px;
+  padding: 30px;
 
-    text-align:center;
+  text-align: center;
 
-    box-shadow:
-    0 20px 40px rgba(0,0,0,.25);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.25);
 
-    animation:fadeIn .6s ease;
+  animation: fadeIn 0.6s ease;
 }
 
-h1{
-    color:#333;
-    margin-bottom:25px;
-    font-size:2rem;
+h1 {
+  color: #333;
+  margin-bottom: 25px;
+  font-size: 2rem;
 }
 
-button{
-    width:100%;
+button {
+  width: 100%;
 
-    padding:15px;
+  padding: 15px;
 
-    font-size:18px;
-    font-weight:600;
+  font-size: 18px;
+  font-weight: 600;
 
-    border:none;
-    border-radius:12px;
+  border: none;
+  border-radius: 12px;
 
-    color:white;
+  color: white;
 
-    cursor:pointer;
+  cursor: pointer;
 
-    background:linear-gradient(45deg,#ff416c,#ff4b2b);
+  background: linear-gradient(45deg, #ff416c, #ff4b2b);
 
-    transition:.3s;
+  transition: 0.3s;
 }
 
-button:hover{
-    transform:translateY(-3px);
-    box-shadow:0 12px 20px rgba(255,75,43,.4);
+button:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 12px 20px rgba(255, 75, 43, 0.4);
 }
 
-button:active{
-    transform:scale(.96);
+button:active {
+  transform: scale(0.96);
 }
 
-.image-box{
+.image-box {
+  margin-top: 25px;
 
-    margin-top:25px;
+  width: 100%;
+  height: 350px;
 
-    width:100%;
-    height:350px;
+  border-radius: 16px;
 
-    border-radius:16px;
+  overflow: hidden;
 
-    overflow:hidden;
+  background: #ececec;
 
-    background:#ececec;
-
-    display:flex;
-    justify-content:center;
-    align-items:center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.image-box::before{
-    content:"🐕";
-    position:absolute;
-    font-size:70px;
-    opacity:.15;
+.image-box::before {
+  content: "🐕";
+  position: absolute;
+  font-size: 70px;
+  opacity: 0.15;
 }
 
-img{
+img {
+  width: 100%;
+  height: 100%;
 
-    width:100%;
-    height:100%;
+  object-fit: cover;
 
-    object-fit:cover;
-
-    transition:.4s;
+  transition: 0.4s;
 }
 
-img:hover{
-    transform:scale(1.05);
+img:hover {
+  transform: scale(1.05);
 }
 
 img:not([src]),
-img[src=""]{
-    display:none;
+img[src=""] {
+  display: none;
 }
 
-@keyframes fadeIn{
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
 
-    from{
-        opacity:0;
-        transform:translateY(30px);
-    }
-
-    to{
-        opacity:1;
-        transform:translateY(0);
-    }
-
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
